@@ -20,6 +20,7 @@ exports.handler = async (event, context) => {
       body: JSON.stringify(products),
     };
   } catch (error) {
+    console.log(error);
     return {
       statusCode: 500,
       body: "General server error",
